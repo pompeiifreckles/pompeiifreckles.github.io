@@ -11,7 +11,7 @@ function CustomNav() {
         { ({active, setActive}) => 
             <Nav variant="pills" activeKey="1">
 
-            <div style={{display: 'flex', margin: 'auto', paddingBottom: '50px'}}>
+            <div style={{display: 'flex', margin: 'auto', paddingBottom: '50px', overflow: 'hidden'}}>
             <Nav.Item>
                 <Nav.Link 
                 eventKey="2" 
@@ -38,7 +38,7 @@ function CustomNav() {
                 title="Item" 
                 style={active === 'about' ? ({...navStyle, textDecoration: 'underline'}) : navStyle} 
                 onClick={() => setActive('about')}>
-                About Me
+                About
                 </Nav.Link>
             </Nav.Item>
 
@@ -52,11 +52,10 @@ function CustomNav() {
 
 const navStyle={
     fontFamily: 'Megrim, cursive',
-    fontSize: '40px',
+    fontSize: '200%',
     color: 'white',
     fontWeight: 'bold',
-    marginLeft: '40px',
-    marginRight: '40px',
+    margin: '0 4vw 5vh'
     // color: 'rgba(255, 255, 255, 1)',
     
     // backgroundColor: 'green',

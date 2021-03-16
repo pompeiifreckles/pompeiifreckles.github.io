@@ -5,6 +5,10 @@ import dog from '../assets/dog.jpg'
 
 
 function AboutScreen() {
+
+    
+      
+
     return(
         <div style={{width: '45%', margin: 'auto'}}>
             <Image src={dog} roundedCircle style={{
@@ -14,6 +18,7 @@ function AboutScreen() {
             transform: 'translate(-50%, 0)',
             marginBottom: '50px',
             }}/>
+            
             {/* <h2 style={{fontSize: '50px', color: 'white', textAlign: 'center', fontFamily: 'Raleway', padding: '40px'}}>Hey there</h2> */}
             <p style={styles.paragraph}>
                 Hello I'm <span style={{color: 'hotpink'}}>Sid</span>. A developer who likes working on challenges. My interests lie in embedded systems and I like working with native languages.<br/>

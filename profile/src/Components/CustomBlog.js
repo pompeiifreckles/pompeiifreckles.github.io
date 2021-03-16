@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card'
 function CustomBlog(props) {
     return (
         <React.Fragment>
-            <Accordion>
+            <Accordion style={{margin: '3vh 0'}}>
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
                 <h2>{props.title}</h2>

@@ -18,15 +18,16 @@ function App() {
     return (
         <div>
             <Particles options={particlesOptions}/>
-            <h1 style={{
-            color: "white",
-            textAlign: "center",
-            fontFamily: 'Megrim, cursive',
-            fontSize: "90px",
-            margin: "45px",
-            }}>
-                Siddharth Bhardwaj
-            </h1>
+            <div style={{display: 'flex', justifyContent: 'center', margin: '10vh 0'}}>
+                <h1 style={{
+                color: "white",
+                textAlign: "center",
+                fontFamily: 'Megrim, cursive',
+                fontSize: "5em",
+                }}>
+                    Siddharth Bhardwaj
+                </h1>
+            </div>
 
             <ActiveTab.Provider value={{active: active, setActive}}>
             <CustomNav />

@@ -10,7 +10,7 @@ function CustomCarousel() {
     return (
         <div style={carouselStyle}>
         {/* <Jumbotron fluid style={{backgroundColor: '#7C8483'}}> */}
-        <Carousel style={{margin: 'auto'}}>
+        <Carousel style={{margin: 'auto 0'}}>
         <Carousel.Item>
             <img
             className="d-block w-100"
@@ -56,8 +56,7 @@ function CustomCarousel() {
 const carouselStyle = {
     width: window.screen.width/1.8,
     height: window.screen.height/1.8,
-    margin: 'auto',
-    marginBottom: '5%',
+    margin: '0 auto 15vh',
     // border: 'solid',
     // borderWidth: '20px',
     // borderColor: 'grey'

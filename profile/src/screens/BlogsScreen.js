@@ -27,7 +27,8 @@ const containerStyle = {
     // backgroundColor: 'orange',
     display: 'flex',
     flexDirection: 'column',
-    gap: '50px'
+    // gap: '7vh'
+    // justifyContent: 'space-between',
 }
 
 export default BlogsScreen
