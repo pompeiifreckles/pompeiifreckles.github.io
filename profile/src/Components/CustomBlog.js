@@ -8,7 +8,7 @@ function CustomBlog(props) {
             <Accordion style={{margin: '3vh 0'}}>
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
-                <h2>{props.title}</h2>
+                <h2 style={{marginLeft: '2em'}}>{props.title}</h2>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                 <Card.Body>{props.children}</Card.Body>

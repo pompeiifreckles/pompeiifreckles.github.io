@@ -1,10 +1,13 @@
 import React from 'react'
 
+import Blog_1 from '../Blogs/C_ErrorHandling' 
 import CustomBlog from '../Components/CustomBlog'
 
 function BlogsScreen() {
     return (
         <div style={containerStyle}>
+
+            <Blog_1 />
 
             <CustomBlog title="Custom title">
                 <p>
