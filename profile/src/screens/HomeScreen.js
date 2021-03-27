@@ -40,7 +40,7 @@ function HomeScreen() {
             </Toast>
         ) : <></>}
 
-        <div style={{display: 'flex', paddingTop: '2vh', marginBottom: '5vh', marginLeft: '50vw', transform: 'translate(-50%, 0)', justifyContent: 'center', gap: '1em' }}>
+        <div style={{display: 'flex', paddingTop: '2vh', marginBottom: '3vh', marginLeft: '50vw', marginTop: '1.5vh', transform: 'translate(-50%, 0)', justifyContent: 'center', gap: '1em' }}>
             <a href="https://github.com/pompeiifreckles/"><FaGithubAlt style={{color: 'aliceblue', cursor: 'pointer'}} size="50" /></a>
             <FaLinkedinIn style={{color: 'aliceblue', cursor: 'pointer'}} size="50" />
             <a href="https://twitter.com/Pompeiifreckles"><FaTwitter style={{color: 'aliceblue', cursor: 'pointer'}} size="50" /></a>

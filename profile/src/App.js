@@ -37,6 +37,7 @@ function App() {
             {active === 'about' ? <AboutScreen /> : null}
             {active === 'blogs' ? <BlogsScreen /> : null}
 
+            <div id="footer"></div>
             {/* <Fade in={(active==='home')} appear={active==='home'} timeout={5000}><HomeScreen /></Fade> */}
 
         </div>
