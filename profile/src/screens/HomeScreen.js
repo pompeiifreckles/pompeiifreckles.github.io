@@ -5,7 +5,6 @@ import { FaGithubAlt, FaLinkedinIn, FaTwitter, FaEnvelope } from 'react-icons/fa
 
 import CustomCards from '../Components/CustomCards'
 import CustomCarousel from '../Components/CustomCarousel'
-
 import profile from '../assets/profile.jpg'
 
 
