@@ -45,9 +45,19 @@ function HomeScreen() {
             <a href="https://github.com/pompeiifreckles/"><FaGithubAlt style={{color: 'aliceblue', cursor: 'pointer'}} size="50" /></a>
             <FaLinkedinIn style={{color: 'aliceblue', cursor: 'pointer'}} size="50" />
             <a href="https://twitter.com/Pompeiifreckles"><FaTwitter style={{color: 'aliceblue', cursor: 'pointer'}} size="50" /></a>
+            
+            <input type="text" value="sidhu97ss@gmail.com" id="myEmail" hidden></input>
+            
             <FaEnvelope style={{color: 'aliceblue', cursor: 'pointer'}} size="50" onClick={() => {
-                setShow(true);   
-                navigator.clipboard.writeText("sidhu97ss@gmail.com")
+                if (navigator.clipboard != undefined)
+                    navigator.clipboard.writeText("sidhu97ss@gmail.com").then(() => setShow(true))
+                else {
+                    var email = document.getElementById("myEmail")
+                    email.select()
+                    email.setSelectionRange(0, 99999)
+                    document.execCommand("copy")
+                    alert("Email: " + email.value);
+                }
             }} />
 
         </div>

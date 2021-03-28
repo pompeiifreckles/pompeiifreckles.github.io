@@ -1,10 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import moon from '../assets/moon.jpg'
-import boy from '../assets/boy.jpg'
-import street from '../assets/street.jpg'
-
 import ilugd from '../assets/carousel/ILUG_D.jpg'
 import bamboo_hut from '../assets/carousel/bamboo_hut.jpg'
 import alias from '../assets/carousel/alias.jpg'
