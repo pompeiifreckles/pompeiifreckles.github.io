@@ -2,93 +2,39 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
+import {FaGithubAlt} from 'react-icons/fa'
 
-import animefx from '../assets/projects/animefx.svg'
-import music_recommendation from '../assets/projects/song_recommendation.svg'
+
+import {projects} from '../Projects/projects'
 
 import '../styles/HomeScreen.css'
 
 function CustomCards() {
     return (
         <Row style={styles.row}>
-        <Col>
-        <Card 
-        // bsPrefix='customCard'
-        style={styles.card.style}
-        // bg={'dark'}
-        text='light'
-        >
-        <Card.Img variant="top" src={music_recommendation} />
-        <Card.Body>
-            <Card.Title><h3 style={styles.card.title}>Card Title</h3></Card.Title>
-            <Card.Text>
-            <p style={styles.card.text}>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-            </p>
-            </Card.Text>
-        </Card.Body>
-        </Card>
-        </Col>
 
-        <Col>
-        <Card 
-        // bsPrefix='customCard'
-        style={styles.card.style}
-        // bg={'dark'}
-        text='light'
-        >
-        <Card.Img variant="top" src={animefx}  />
-        <Card.Body>
-            <Card.Title><h3 style={styles.card.title}>AnimeFX (Active)</h3></Card.Title>
-            <Card.Text>
-            <p style={styles.card.text}>
-            AnimeFX is anime streaming service, serving videos over hls and amazon's CDN 
-            </p>
-            </Card.Text>
-        </Card.Body>
-        </Card>
-        </Col>
-
-        <Col>
-        <Card 
-        // bsPrefix='customCard'
-        style={styles.card.style}
-        // bg={'dark'}
-        text='light'
-        >
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-            <Card.Title><h3 style={styles.card.title}>Card Title</h3></Card.Title>
-            <Card.Text>
-            <p style={styles.card.text}>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-            </p>
-            </Card.Text>
-        </Card.Body>
-        </Card>
-        </Col>
-
-        <Col>
-        <Card 
-        // bsPrefix='customCard'
-        style={styles.card.style}
-        // bg={'dark'}
-        text='light'
-        >
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-            <Card.Title><h3 style={styles.card.title}>Card Title</h3></Card.Title>
-            <Card.Text>
-            <p style={styles.card.text}>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-            </p>
-            </Card.Text>
-        </Card.Body>
-        </Card>
-        </Col>
+        {projects.map(project => (
+            <Col>
+            <Card 
+            style={styles.card.style}
+            text='light'
+            >
+            <Card.Img variant="top" src={project.image}  />
+            <Card.Body>
+                <Card.Title><h3 style={styles.card.title}>{project.title}</h3></Card.Title>
+                <Card.Text>
+                <p style={styles.card.text}>
+                    {project.body}
+                </p>
+                </Card.Text>
+                <Button variant="light" size="lg" style={styles.card.button} onClick={() => window.open(project.link)}> 
+                    <FaGithubAlt size="30"/> 
+                </Button>
+            </Card.Body>
+            </Card>
+            </Col>
+        ))}
 
         </Row>
     )
@@ -108,6 +54,9 @@ const styles = {
             fontFamily: 'Raleway', 
             fontWeight: 'bold'
         },
+        button: {
+            borderRadius: 20,
+        }
     },
     row: { 
         width: '75%', margin: 'auto', 

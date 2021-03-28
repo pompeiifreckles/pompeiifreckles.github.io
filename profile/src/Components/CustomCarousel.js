@@ -4,6 +4,10 @@ import Carousel from 'react-bootstrap/Carousel'
 import moon from '../assets/moon.jpg'
 import boy from '../assets/boy.jpg'
 import street from '../assets/street.jpg'
+
+import ilugd from '../assets/carousel/ILUG_D.jpg'
+import bamboo_hut from '../assets/carousel/bamboo_hut.jpg'
+import alias from '../assets/carousel/alias.jpg'
 // import { Jumbotron } from 'react-bootstrap'
 
 function CustomCarousel() {
@@ -14,37 +18,37 @@ function CustomCarousel() {
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src={moon}
-            // style={{width: '500px', height: '300px'}}
+            src={ilugd}
+            style={{width: '50%', height: '30%'}}
             alt="First slide"
             />
             <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Indian Linux User Group (ILUG-D)</h3>
+            <p>Raspberry Pi Jam and hacking RF with breadboard</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src={boy}
+            src={bamboo_hut}
             alt="Third slide"
             />
 
             <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Hardware Hackers Delhi</h3>
+            <p>Arduino Fest and RISC systems</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src={street}
+            src={alias}
             alt="Third slide"
             />
 
             <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>ALiAS</h3>
+            <p>Well nothing is going on here, move on!</p>
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>

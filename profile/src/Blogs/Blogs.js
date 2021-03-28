@@ -33,7 +33,7 @@ export const blogs = [
         img: chrooting,
         link: 'https://sidhu97ss.medium.com/proper-way-of-chrooting-adbb3dfb083e',
         title: 'CHROOTing',
-        body: 'With everything going easy these days we forget why it is important to do the work manually. One such tool is \‘chroot\’, which every poweruser might have used but don\’t understand it fully. We tend to incline towards a more easier approach like docker but chroot itself has its own value.',
+        body: 'With everything going easy these days we forget why it is important to do the work manually. One such tool is \‘chroot\’, which every poweruser might have used but don\’t understand fully. We tend to incline towards a more easier approach like docker but chroot itself has its own value.',
     },
 
     

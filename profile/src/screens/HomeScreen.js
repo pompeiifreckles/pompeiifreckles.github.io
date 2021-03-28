@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'react-bootstrap/Image'
 import Toast from 'react-bootstrap/Toast'
 import { FaGithubAlt, FaLinkedinIn, FaTwitter, FaEnvelope } from 'react-icons/fa'
+
 import CustomCards from '../Components/CustomCards'
 import CustomCarousel from '../Components/CustomCarousel'
 
-import dog from '../assets/dog.jpg'
+import profile from '../assets/profile.jpg'
 
 
 function HomeScreen() {
@@ -22,7 +23,7 @@ function HomeScreen() {
             margin: 'auto',
             // backgroundColor: 'orange'    
         }}>
-        <Image src={dog} roundedCircle style={{
+        <Image src={profile} roundedCircle style={{
             height: '200px', 
             width: '200px', 
             marginLeft: '50%', 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image'
 
-import dog from '../assets/dog.jpg'
+import profile from '../assets/profile.jpg'
 
 
 function AboutScreen() {
@@ -11,7 +11,7 @@ function AboutScreen() {
 
     return(
         <div style={{width: '45%', margin: 'auto'}}>
-            <Image src={dog} roundedCircle style={{
+            <Image src={profile} roundedCircle style={{
             height: '200px', 
             width: '200px', 
             marginLeft: '50%', 

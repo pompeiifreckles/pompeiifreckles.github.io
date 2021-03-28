@@ -29,7 +29,7 @@ function BlogsScreen() {
                     <Card.Text style={styles.card.text}>
                     {blog.body}
                     </Card.Text>
-                    <Button style={styles.card.button} variant="light" onClick={() => { window.open(blog.link) }}> 
+                    <Button style={styles.card.button} variant="light" size="lg" onClick={() => { window.open(blog.link) }}> 
                         Read
                     </Button>
                 </Card.Body>
