@@ -15,7 +15,7 @@ function CustomCards() {
         <Row style={styles.row}>
 
         {projects.map(project => (
-            <Col>
+            <Col sm={12} md={6} lg={6} xl={3} >
             <Card 
             style={styles.card.style}
             text='light'
@@ -59,7 +59,7 @@ const styles = {
         }
     },
     row: { 
-        width: '75%', margin: 'auto', 
+        width: '80%', margin: 'auto', 
         marginBottom: '5%', justifyContent: 'center' 
     }
 }

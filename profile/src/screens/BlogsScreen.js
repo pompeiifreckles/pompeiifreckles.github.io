@@ -50,7 +50,7 @@ function BlogsScreen() {
 
 const styles = {
     containerStyle: {
-        width: '50%', 
+        width: '70%', 
         margin: 'auto', 
         // backgroundColor: 'orange',
         display: 'flex',
