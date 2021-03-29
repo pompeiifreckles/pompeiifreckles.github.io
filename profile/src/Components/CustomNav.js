@@ -1,49 +1,38 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
-// import { FaRegIdBadge } from 'react-icons/fa'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+
 
 import {ActiveTab} from '../App'
 
 function CustomNav() {
-    // let activeTab = ActiveTab
     return (
         <ActiveTab.Consumer>
         { ({active, setActive}) => 
-            <Nav variant="pills" activeKey="1">
+            <Nav as="ul">
 
-            <div style={{display: 'flex', margin: 'auto', paddingBottom: '50px', overflow: 'hidden'}}>
-            <Nav.Item>
-                <Nav.Link 
-                eventKey="2" 
-                title="Item" 
-                style={active === 'home' ? ({...navStyle, textDecoration: 'underline'}) : navStyle} 
-                onClick={() => setActive('home')}>
-                Home
-                </Nav.Link>
-            </Nav.Item>
+            {/* <div style={{display: 'flex', margin: 'auto', paddingBottom: '50px'}}> */}
 
-            <Nav.Item>
-                <Nav.Link 
-                eventKey="2" 
-                title="Item" 
-                style={active === 'blogs' ? ({...navStyle, textDecoration: 'underline'}) : navStyle} 
-                onClick={() => setActive('blogs')}>
-                Blogs
-                </Nav.Link>
-            </Nav.Item>
+            <Row style={{justifyContent: 'center', flex: 1, marginBottom: '50px'}} >
 
-            <Nav.Item>
-                <Nav.Link 
-                eventKey="2" 
-                title="Item" 
-                style={active === 'about' ? ({...navStyle, textDecoration: 'underline'}) : navStyle} 
-                onClick={() => setActive('about')}>
-                About
-                </Nav.Link>
-            </Nav.Item>
+            {(['home', 'blogs', 'about']).map(nav => (
+                <Col lg={2} sm={3} xs={4}>
+                <Nav.Item>
+                    <Nav.Link 
+                    as="li"
+                    style={active === nav ? ({...navStyle, textDecoration: 'underline'}) : navStyle} 
+                    onClick={() => setActive(nav)}>
+                    {nav.charAt(0).toUpperCase()+nav.slice(1)}
+                    </Nav.Link>
+                </Nav.Item>
+                </Col>
+            ))}
 
-            </div>
+            </Row>
 
+            {/* </div> */}
             </Nav>
         }
         </ActiveTab.Consumer>
@@ -55,7 +44,9 @@ const navStyle={
     fontSize: '200%',
     color: 'white',
     fontWeight: 'bold',
-    margin: '0 4vw 5vh'
+    textAlign: 'center',
+    // margin: '0 0 5vh',
+    cursor: 'pointer',
     // color: 'rgba(255, 255, 255, 1)',
     
     // backgroundColor: 'green',

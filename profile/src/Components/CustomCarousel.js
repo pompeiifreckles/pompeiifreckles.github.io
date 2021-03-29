@@ -1,16 +1,18 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 
 import ilugd from '../assets/carousel/ILUG_D.jpg'
 import bamboo_hut from '../assets/carousel/bamboo_hut.jpg'
 import alias from '../assets/carousel/alias.jpg'
-// import { Jumbotron } from 'react-bootstrap'
 
 function CustomCarousel() {
     return (
-        <div style={carouselStyle}>
-        {/* <Jumbotron fluid style={{backgroundColor: '#7C8483'}}> */}
-        <Carousel style={{margin: 'auto 0'}}>
+        <Row style={carouselStyle}>
+        <Col xl={7} md={10} xs={12} style={{padding: 0}}>
+        <Carousel >
         <Carousel.Item>
             <img
             className="d-block w-100"
@@ -48,18 +50,13 @@ function CustomCarousel() {
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>
-        {/* </Jumbotron> */}
-        </div>
+        </Col>
+        </Row>
     )
 }
 
 const carouselStyle = {
-    width: window.screen.width/1.8,
-    height: window.screen.height/1.8,
-    margin: '0 auto 15vh',
-    // border: 'solid',
-    // borderWidth: '20px',
-    // borderColor: 'grey'
+    justifyContent: 'center', marginBottom: '100px'
 }
 
 export default CustomCarousel;

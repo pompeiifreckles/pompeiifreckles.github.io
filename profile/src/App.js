@@ -11,6 +11,8 @@ import HomeScreen from './screens/HomeScreen'
 import AboutScreen from './screens/AboutScreen'
 import BlogsScreen from './screens/BlogsScreen'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export const ActiveTab = React.createContext()
 
 function App() {
